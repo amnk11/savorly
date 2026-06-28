@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import logo from "../assets/logo.svg";
 
@@ -6,9 +5,8 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-[#EAEAEA] bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
-
+    <nav className="sticky top-0 z-50 bg-white py-2">
+      <div className="mx-auto mt-2 flex h-20 max-w-7xl items-center justify-between rounded-3xl border border-[#F1F1F1] bg-white px-6 shadow-[0_10px_40px_rgba(17,24,39,0.06)] sm:px-8">
         <div className="flex items-center gap-2">
           <img src={logo} alt="logo" className="h-10 w-auto" />
         </div>
@@ -91,9 +89,8 @@ function Navbar() {
       </div>
 
       {isMenuOpen && (
-        <div className="border-t border-[#EAEAEA] bg-white lg:hidden">
+        <div className="mx-auto mt-2 max-w-7xl rounded-3xl border border-[#F1F1F1] bg-white shadow-[0_10px_40px_rgba(17,24,39,0.06)] lg:hidden">
           <div className="space-y-4 px-5 py-5">
-
             <div className="flex items-center rounded-xl border border-[#EAEAEA] bg-[#F8F9FA] px-4 py-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -1,10 +1,13 @@
-import Navbar from "../components/Navbar.jsx";
-import Hero from "../components/Hero.jsx";
-function Home() {
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import MealCard from "../components/MealCard";
+
+function Home({ onSelectMeal }) {
   return (
     <>
       <Navbar />
       <Hero />
+      <MealCard onSelectMeal={onSelectMeal} />
     </>
   );
 }

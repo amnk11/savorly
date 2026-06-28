@@ -40,8 +40,8 @@ import Heroimg from "../assets/hero.png";
 
 function Hero() {
   return (
-    <section className="bg-white">
-      <div className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between gap-12 px-6 py-12 md:flex-row md:px-10 lg:px-13 lg:py-10">
+    <section className="bg-white overflow-hidden">
+      <div className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between gap-12 rounded-3xl border border-[#F1F1F1] bg-white px-6 py-12 shadow-[0_10px_40px_rgba(17,24,39,0.06)] md:flex-row md:px-10 lg:px-16 lg:py-10 my-2 ">
         {/* Left Content */}
         <div className="max-w-xl text-center md:text-left">
           {/* Badge */}

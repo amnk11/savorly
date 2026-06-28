@@ -1,13 +1,21 @@
 import { useState } from "react";
 import "./App.css";
-import Home from "./pages/Home.jsx";
+import Home from "./pages/Home";
+import MealDetails from "./pages/MealDetails";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [selectedMeal, setSelectedMeal] = useState(null);
 
   return (
     <>
-      <Home />
+      {selectedMeal ? (
+        <MealDetails
+          meal={selectedMeal}
+          onBack={() => setSelectedMeal(null)}
+        />
+      ) : (
+        <Home onSelectMeal={setSelectedMeal} />
+      )}
     </>
   );
 }
