@@ -9,12 +9,10 @@ function Navbar() {
     <nav className="sticky top-0 z-50 border-b border-[#EAEAEA] bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
 
-        {/* Logo */}
         <div className="flex items-center gap-2">
           <img src={logo} alt="logo" className="h-10 w-auto" />
         </div>
 
-        {/* Desktop Search */}
         <div className="hidden flex-1 justify-center px-8 lg:flex">
           <div className="flex w-full max-w-lg items-center rounded-xl border border-[#EAEAEA] bg-[#F8F9FA] px-4 py-2.5 transition focus-within:border-[#4CAF50]">
             <svg
@@ -40,7 +38,6 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Desktop Nav */}
         <div className="hidden items-center gap-8 lg:flex">
           <button className="text-sm font-medium text-[#4A4A4A] transition hover:text-[#4CAF50]">
             Categories
@@ -55,7 +52,6 @@ function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="rounded-lg border border-[#EAEAEA] p-2 text-[#4A4A4A] lg:hidden"
@@ -94,7 +90,6 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="border-t border-[#EAEAEA] bg-white lg:hidden">
           <div className="space-y-4 px-5 py-5">
